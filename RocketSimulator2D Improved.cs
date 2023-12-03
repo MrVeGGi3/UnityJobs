@@ -93,6 +93,7 @@ class Program
         int currentPlanet = int.Parse(Console.ReadLine()) - 1;
         Console.WriteLine("Planeta Selecionado:" + planetas[currentPlanet].nome);
         Console.WriteLine();
+        perfomanceMeasure.Start();//inicio do cronômetro
         
         while (time < 10 && rockets[currentRocket].posY < planetas[currentPlanet].raio)//enquanto o tempo for menor que "x" segundos e o foguete não sair da órbita do planeta
         {
